@@ -1,0 +1,125 @@
+<!--Estrutura basica de uma pagina HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"><!--lang define o idioma!-->
+  <head><!-- Dentro desta estrutura inserir tudo que for necessitar no site: Configuração,Importação de recursos, tudo que estiver aqui dentro não vai aparecer no site!-->
+    <link rel="stylesheet" type="text/css"
+    href="css/style.css">
+    <style type="text/css">
+        (selector) {
+         propriedade: valor;
+      }
+      footer {
+        background-color: red;
+      }
+    </style>
+    <body>  <!--Tudo que for dentro do body irá aparecer na pagina, texto, imagem,menu-->
+              <!--</header> é o cabeçalho
+              Colocando CSS em conjunto com HTML>> CSS Inline(na linha/ tem prioridade), CSS interno e CSS Externo. -->
+
+            <header style="background-color:red;">
+
+              Horário de abertura: 09:00- 18:00h
+
+              <br /><!--Essa tag pula/faz quebra de linhas-->
+              <!--atributo alt significa alternativa, insere um texto caso a imagem nao seja carregada,importante para deficiente visual-->
+              <img alt="Logo da Empresa"
+              title="Aqui é apresentada a logo da empresa"
+              src="img/logo.jpeg" />
+              <!-- "Title" pode ser usado em textos e legendas
+              atributo "src" é abreviação de source, signinica fonte e irá localizar o arquivo/imagem que quero inserir na pagina
+              -->
+                  <nav>
+                        Página Inicial  |  Produtos e Marcas  |
+                    <a title ="Direciona para a página de fale conosco" href="FaleConosco.html">Fale Conosco</a>
+                    <a title="Direciona para pagina Onde estamos" href ="OndeEstamos.html">Onde estamos</a>
+                  </nav>
+            </header>
+          <section>
+
+                Ajuda profissional para escolher
+                as melhores lentes.
+
+                Armações e lentes
+
+              <a title="Direciona para pagina Onde estamos" href ="OndeEstamos.html">Onde estamos</a>
+          </section>
+          <section>
+                Trabalhamos com as melhores
+                marcas de lentes
+              <img alt="Logo das Marcas (Lentes)" src="img/LogoLentes.png" />
+          </section>
+            <section>
+                e de armações
+              <img alt="Logo das Marcas (Armações)" src="img/LogoArmacoes.png" />
+            </section>
+              <section>
+                Grande variedade de armações
+
+                <a title="Direciona para pagina Onde estamos" href ="OndeEstamos.html">Venha Conferir</a>
+              </section>
+              <footer>
+                <div>
+                  <div>
+                    <img alt="Logo da Empresa"
+                    title="Aqui é apresentada a logo da empresa"
+                    src="img/logo.jpeg" />
+                      Nós oferecemos um
+                      serviço completo
+                      para o melhor
+                      conforto da sua
+                      visão.
+                      <a href="#">
+                          <img alt = "Link para Facebook da empresa" src="img/facebook.jpg" width="50"/>
+                      </a>
+                      <a href="#">
+                          <img alt = "Link para Instagram da empresa" src="img/Instragram.jpg" width="50"/>
+                      </a>
+                      <a href="#">
+                          <img alt = "Link para Twitter da empresa" src="img/twitter.jpg" width="50"/>
+                      </a>
+                          (Link - Facebook,
+                      Twitter,
+                      Instagram)
+                    </div>
+                    <div>
+                      Links
+
+		                  Início
+                      Pordutos e marcas
+                      Fale Conosco
+                      Onde Estamos
+                    </div>
+                    <div>
+                      Contato
+
+                      Endereço: Rua do Aprendizado HTML,
+                      Nº 5,
+                      Av. CSS3 - Bloco das Artes,
+                      Cidade JavaScript - UF VsC,
+                      Cep 14072-022.
+
+                      Telefone: <a href ="4133330000">(41)
+                      3333-0000.</a>
+
+                      Email:<a href ="otica@magiatech.com.br">
+                      otica@magiatech.com.br</a>
+                    </div>
+                    <div>
+                      Todos os direitos
+                      reservados(@) 2017.
+                      <a href="TermoDeUso.html">Termos de uso</a>
+                       e <a href="PoliticaPrivacidade.html">Política de
+                      privacidade.</a>
+                    </div>
+                </div>
+              </footer>
+
+
+
+
+
+
+    </body>
+  </head>
+</html>

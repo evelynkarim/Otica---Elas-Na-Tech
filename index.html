@@ -1,0 +1,130 @@
+<!--Estrutura basica de uma pagina HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--lang define o idioma!-->
+
+<head>
+  <!-- Dentro desta estrutura inserir tudo que for necessitar no site: Configuração,Importação de recursos, tudo que estiver aqui dentro não vai aparecer no site!-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+  <!--Tudo que for dentro do body irá aparecer na pagina, texto, imagem,menu-->
+  <!--</header> é o cabeçalho
+              Colocando CSS em conjunto com HTML>> CSS Inline(na linha/ tem prioridade), CSS interno e CSS Externo. -->
+  <header>
+    <div class="barra_superior">
+      <div class="container">
+        Horário de abertura: 09:00- 18:00h
+      </div>
+    </div>
+    <!--<br />>>>Essa tag pula/faz quebra de linhas-->
+    <!--atributo alt significa alternativa, insere um texto caso a imagem nao seja carregada,importante para deficiente visual-->
+    <div class="container">
+      <img class="logo" alt="Logo da Empresa" title="Aqui é apresentada a logo da empresa" src="img/logo.jpeg" />
+      <!-- "Title" pode ser usado em textos e legendas
+                atributo "src" é abreviação de source, signinica fonte e irá localizar o arquivo/imagem que quero inserir na pagina
+                -->
+      <nav>
+        <a href="index.html"> Página Inicial</a>|<a href="index.html">Produtos e Marcas</a>|
+        <a title="Direciona para a página de fale conosco" href="FaleConosco.html">Fale Conosco</a>
+        <a class="btn_destaque" title="Direciona para pagina Onde estamos" href="OndeEstamos.html">Onde estamos</a>
+      </nav>
+    </div>
+  </header>
+  <br class="clearfix" />
+  <section class="sec01">
+    <div class="container">
+      <p class="titulo">
+        Ajuda profissional <br />
+        para escolher as <br />
+        melhores lentes<br />
+      </p>
+      <p>Armações e lentes</p>
+      <a href="OndeEstamos.html" class="btn_destaque">Onde estamos</a>
+    </div>
+  </section>
+  <a name="nossas_marcas" />
+  <!--link do tipo ancora, deixa a navegação dentro da mesma pagina, em um ponto específico-->
+  <section class="sec02">
+    <div class="container">
+      <p>
+        Trabalhamos com as melhores
+        marcas de <strong>lentes</strong>
+      </p>
+      <img alt="Logo das Marcas (Lentes)" src="img/LogoLentes.png" />
+    </div>
+  </section>
+  <section class="sec02">
+    <div class="container">
+      <p>e de armações</p>
+      <img alt="Logo das Marcas (Armações)" src="img/LogoArmacoes.png" />
+    </div>
+  </section>
+  <section class="sec03">
+    <div class="container">
+      <div class="largura40">
+        <p>
+          Grande <br />
+          variedade <br>
+          de armações
+        </p>
+        <a href="OndeEstamos.html" class="btn_destaque">Venha Conferir</a>
+      </div>
+    </div>
+  </section>
+  <br class="clearfix" />
+  <footer>
+    <div class="container">
+      <div class="um_terco">
+        <div class="container_logo">
+          <img class="logo" alt="Logo da Empresa" title="Aqui é apresentada a logo da empresa" src="img/logo.jpeg" />
+          <p>Nós oferecemos um
+            serviço completo
+            para o melhor
+            conforto da sua
+            visão.
+        </div>
+          </p>
+          <div class="container_logo">
+            <a href="#"><img alt="Link para Facebook da empresa" src="img/facebook.jpg" /></a><a href="#"><img
+                alt="Link para Instagram da empresa" src="img/Instragram.jpg" /></a><a href="#"><img
+                alt="Link para Twitter da empresa" src="img/twitter.jpg" />
+            </a>
+        </div>
+      </div>
+      <div class="um_terco">
+        <div class="margem_esquerda">
+          <h3>Links</h3>
+          <a alt="vai para a pagina inicial do site" href="index.html">Início</a><br />
+          <a alt="Marcas que trabalhamos" href="#nossas_marcas">Pordutos e marcas</a><br />
+          <a title="Direciona para a página de fale conosco" href="FaleConosco.html">Fale Conosco</a><br />
+          <a href="OndeEstamos.html">Onde Estamos</a><br />
+        </div>
+      </div>
+      <div class="um_terco">
+        <h3>Contato</h3>
+        <strong>Endereço:</strong> Rua do Aprendizado HTML Nº 5,
+        Av. CSS3 - Bloco das Artes,
+        Cidade JavaScript - UF VsC,
+        Cep 14072-022.<br />
+        <strong>Telefone:</strong><a href="4133330000">(41)
+          3333-0000.</a><br />
+        <strong>Email:</strong><a href="otica@magiatech.com.br">
+          otica@magiatech.com.br</a><br />
+      </div>
+    </div>
+    <br class="clearfix" />
+    <div class="direitos_reservados">
+      Todos os direitos reservados a &copy;Copyright 2017.
+      <a href="TermoDeUso.html">Termos de uso</a>
+      e <a href="PoliticaPrivacidade.html">Política de
+        privacidade.</a>
+    </div>
+  </footer>
+</body>
+</head>
+
+</html>

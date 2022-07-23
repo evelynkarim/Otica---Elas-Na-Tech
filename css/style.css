@@ -1,0 +1,249 @@
+/*css externo*/
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@300 & display=swap');
+
+@font-face {
+    font-family: "Florentia";
+    src: url(fontes/Florentia-Thin-trial.ttf);
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  margin: 0px;
+  font-family: "Raleway","Florentia", "Arial", sans-serif;
+}
+
+.barra_superior {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  color: rgb(187, 187, 187);
+  padding-top: 10px;
+  /*padding>>define a distancia da margem interna de externa*/
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.container {
+  /*leyout responsivo*/
+  max-width: 960px;
+  /*usando este formato quando a pg abrir em cel ou pc, preencherá toda a pg sem precisar rolar para o lado*/
+  width: 100%;
+  /*neste formato teremos visualização integral da pag no pc ou cel*/
+  margin: 0 auto;
+}
+
+nav {
+  color: rgb(187, 187, 187);
+  font-size: 12px;
+  float: right;
+  /*float fará o botão flutuar para (right) direita*/
+  margin-top: 50px;
+}
+
+nav a {
+  color: rgb(187, 187, 187);
+  text-decoration: none;
+}
+
+.btn_destaque, .metade input[type=submit] {
+  border: none;
+  background-color: rgb(255, 77, 77);
+  color: white;
+  padding: 12px 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+.sec01 {
+  height: 640px;
+  color: white;
+  background-image: url(../img/mulher\ de\ oculos.png);
+  /*(../img.>> faz retornar na pasta que necessito buscar um arquivo)*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(164, 164, 164);
+}
+
+.sec01 p.titulo {
+  font-size: 48px;
+  padding-top: 130px;
+}
+
+.sec01 p {
+  font-size: 24px;
+  padding-bottom: 30px;
+  line-height: 120%;
+}
+
+.sec02 {
+  border-style: groove;
+  border-bottom: 2px outset rgb(187, 187, 187);
+  line-height: 150%;
+}
+
+.sec02 p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sec02 img {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.sec03 {
+  background-color: rgb(228, 228, 235);
+  height: 664px;
+  background-image: url(../img/Home2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.sec03 p {
+  font-size: 54px;
+  line-height: 120%;
+  color: rgb(102, 102, 102);
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.largura40 {
+  width: 35%;
+  float: left;
+  background-color: rgb(228, 228, 235);
+  height: 664px;
+}
+
+.direitos_reservados {
+  background-color: rgb(255, 77, 77);
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.direitos_reservados a {
+  color: white;
+}
+
+.um_terco {
+  width: 33%;
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.um_terco a {
+  color: rgb(136, 136, 136);
+}
+
+.um_terco .logo {
+  width: 100%;
+}
+
+.um_terco img {
+  width: 50px;
+}
+
+.margem_esquerda {
+  margin-left: 30px;
+}
+.sec_fale, .sec_onde {
+    height: 500px;
+    background-color:#fafafa;
+}
+.sec_fale .metade{
+    padding-top: 100px;
+}
+.metade {
+    width: 50%;
+    float: left;
+    line-height: 150%;
+    color: rgb(110,110,110);
+}
+.metade div, .metade address{
+    margin-left: 10px;
+}
+.metade form {
+    line-height: 250%;
+}
+.metade form input [type=text], textarea{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 66%;
+    background-color: #fafafa;
+    padding: 10px;
+
+}
+.metade textarea {
+    min-height: 100px;
+}
+.metade input[type=submit] {
+    float: right;
+}
+.metade img {
+    width: 50px;
+}
+.metade label {
+    width: 30%;
+    display: inline-block; /*sempre que quiser criar um bloco pode-se usar o display, display none deixa os elementos invisiveis e block faz com o elemento se comporte como uma div(irá dividir em blocos um embaixo do outro)*/
+    vertical-align: top;
+}
+/*resolução para tablets*/
+@media screen and (min-width:481px) and (max-width: 1366px) {
+
+}
+
+/* resolução para Smartphones */
+@media screen and (max-width: 480px) {
+  .barra_superior .container {
+      margin-left: 10px;
+  }
+  .logo {
+      width: 100%;
+  }
+  nav {
+      float: none;
+      margin-left: 10px;
+      text-align: center;
+      font-size: 18px;
+  }
+  nav .btn_destaque {
+      margin-left: 0px !important;
+  }
+  .sec01 p, .sec01 .btn_destaque {
+      margin-left: 20px;
+  }
+  .sec03 {
+      background-image: none;
+      height: 450px;
+      text-align: center;
+      border-bottom: 1px solid rgb(204, 204, 204);
+  }
+  .sec03 p {
+      padding-top: 10px;
+  }
+  .largura40 {
+      width: 100%;
+      height: 450px;
+  }
+  .um_terco {
+      width: 100%;
+      border-bottom: 1px solid rgb(204, 204, 204);
+      padding-left: 20px;
+  }
+  .margem_esquerda {
+      margin-left: 0px;
+  }
+  .um_terco .logo{
+      width: 50%;
+  }
+  .container_logo {
+      text-align: center;
+  }
+}
